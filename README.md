@@ -32,10 +32,77 @@ Jupyter Notebook for analysis
 
 7. Future Improvements
 🔹 Include additional health factors such as dietary habits and sleep patterns
-🔹 Experiment with other classification models like Random Forest or SVM
+🔹 Experiment with other classification models like Random Forest 
 🔹 Develop a Streamlit dashboard for real-time health data visualization
+Health Analysis Dashboard
+🚀 An interactive dashboard where users filter health data based on Gender, Blood Pressure, Diabetes, and Medication Adherence. The app finds the corresponding Age and BMI, which are then used as inputs for a Gradio model to predict health risks.
 
-8. Author
+🛠 Features
+✅ Two-step process:
+1️⃣ Streamlit App: Finds Age & BMI based on user filters
+2️⃣ Gradio Model: Predicts Health Risks based on Age & BMI
+✅ Sidebar filters for:
+
+Gender
+Blood Pressure
+Diabetes Status
+Medication Adherence
+✅ Displays Age & BMI for the filtered data
+✅ Gradio Model predicts health risks based on Age & BMI
+📌 Installation
+Clone the repository:
+
+sh
+Copy
+Edit
+git clone https://github.com/your-username/health-analysis-dashboard.git
+cd health-analysis-dashboard
+Create a virtual environment (optional but recommended):
+
+sh
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+Install dependencies:
+
+sh
+Copy
+Edit
+pip install -r requirements.txt
+🚀 Usage
+1️⃣ Step 1: Run the Streamlit App
+sh
+Copy
+Edit
+streamlit run health_dashboard_v2.py
+Use the sidebar to filter by Gender, Blood Pressure, Diabetes, and Medication Adherence.
+The app will display the corresponding Age & BMI.
+2️⃣ Step 2: Run the Gradio App
+sh
+Copy
+Edit
+python gradio_health_risk.py
+The Age & BMI found in Step 1 become inputs for the Gradio model.
+The model predicts the health risk level based on Age & BMI.
+Click the link to open the Gradio web app.
+📊 How It Works
+🔹 Streamlit App (Step 1)
+Select values for Gender, Blood Pressure, Diabetes, and Medication Adherence from the sidebar.
+The app filters the dataset based on the selected options.
+It displays the corresponding Age & BMI for the filtered records.
+🔹 Gradio App (Step 2)
+The Age & BMI found in the Streamlit app become inputs for the Gradio model.
+The model predicts the health risk level (e.g., Low, Moderate, High).
+The output is displayed in the Gradio web UI.
+🛠 Technologies Used
+Python
+Streamlit (for filtering and displaying Age & BMI)
+Gradio (for predicting health risks)
+Pandas
+NumPy
+
+9. Author
 👤 James Ndungu
 📧 Email: your.kiddondochez585@gmail.com
 🔗 linkedin.com/in/james-ndungu-803748322
