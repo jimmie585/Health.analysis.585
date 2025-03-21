@@ -104,7 +104,7 @@ NumPy
 
 9. Author
 👤 James Ndungu
-📧 Email: your.kiddondochez585@gmail.com
+📧 Email: your.jamesndungu.dev@gmail.com
 🔗 linkedin.com/in/james-ndungu-803748322
 🔗 github.com/kiddo585 
 
