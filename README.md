@@ -55,9 +55,9 @@ Clone the repository:
 sh
 Copy
 Edit
-git clone https://github.com/your-username/health-analysis-dashboard.git
+git clone https://github.com/Jimmie585/health-analysis-dashboard.git
 cd health-analysis-dashboard
-Create a virtual environment (optional but recommended):
+Create a virtual environment ():
 
 sh
 Copy
